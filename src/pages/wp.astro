@@ -3,6 +3,7 @@ const res = await fetch("https://bosserheide.nl/wp-json/wp/v2/posts?_embed&per_p
 const posts = await res.json()
 ---
 <h1>Astro + WordPress 🚀</h1>
+<p> very cool</p>
 {
     posts.map((post) => (
     <h2 set:html="post.title.rendered" />
